@@ -1,0 +1,196 @@
+body {
+  background-image: url('/assets/img/bg.jpg');
+  background-size: cover;
+  cursor: url('/assets/img/hand1.png'), auto;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+  font-family: 'Tajawal', sans-serif;
+}
+
+.background-vid {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  animation: spinner 1s linear infinite;
+  width: 50px;
+  height: 50px;
+}
+
+.grid-container {
+  margin: 0;
+}
+
+/*
+    CHAMPION VIEW
+*/
+
+.champion {
+  margin: auto;
+  height: 150px;
+  width: 150px;
+}
+.champion-wrapper {
+  position: relative;
+  height: 150px;
+  width: 50%;
+  cursor: url('/assets/img/hand1_tco.png'), auto;
+  float: left;
+  margin: 10px auto;
+}
+
+@media only screen and (min-width: 550px) {
+  .champion-wrapper {
+    width: 33%;
+  }
+  .grid-container {
+    margin: 0 10%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .champion-wrapper {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .champion-wrapper {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .champion-wrapper {
+    width: 16.6%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .champion-wrapper {
+    width: 14.28%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .champion-wrapper {
+    width: 12.5%;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .champion-wrapper {
+    width: 11.1%;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .champion-wrapper {
+    width: 10%;
+  }
+}
+
+.champion-ring {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url('/assets/img/clicked.png') !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.champion-wrapper:hover .champion-ring {
+  background-image: url('/assets/img/hover.png') !important;
+}
+
+img.champion-icon {
+  margin: 20px 0 0 20px;
+  position: absolute;
+  border-radius: 100%;
+  height: 110px;
+}
+
+/*
+    BUTTONS
+*/
+
+button {
+  font-family: 'Tajawal';
+  font-weight: 600;
+
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  color: #cdbe91;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  padding: 9px 21px;
+  cursor: pointer;
+  box-shadow: 0 0 1px 1px #010a13, inset 0 0 1px 1px #010a13;
+  background: #1e2328;
+  border: 2px solid transparent;
+  border-image: linear-gradient(
+    to top,
+    #785b28 0%,
+    #c89c3c 55%,
+    #c8a355 71%,
+    #c8aa6e 100%
+  );
+  border-image-slice: 1;
+  transition: opacity 300ms linear;
+  margin-top: 5px;
+  transition: color 100ms linear;
+}
+button:hover {
+  cursor: url('/assets/img/hand1_tco.png'), auto;
+  color: #f0e6d2;
+  border: 2px solid transparent;
+  border-image: linear-gradient(
+    to top,
+    rgb(78.4%, 61.2%, 23.5%) 0%,
+    rgb(86.3%, 75.7%, 53.3%) 50%,
+    rgb(88.2%, 78.8%, 59.6%) 71%,
+    rgb(94.1%, 90.2%, 84.7%) 100%
+  );
+  border-image-slice: 1;
+  box-shadow: 0px 0px 13px 0px rgba(205, 190, 145, 0.39);
+  transition: color 100ms linear;
+  /* filter: blur(4px); */
+}
+button:active {
+  color: #e4e1d8;
+  border-image: linear-gradient(
+    to top,
+    #ffffff 0%,
+    #ffffff 33%,
+    #ffffff 66%,
+    #ffffff 100%
+  );
+  border-image-slice: 1;
+  color: #5c5b57;
+  transition: color 100ms linear;
+  animation: none;
+}
+button:focus {
+  outline: 0;
+}
+button:after {
+  transition: all 0.8s;
+}
