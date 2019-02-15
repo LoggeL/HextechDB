@@ -1,7 +1,7 @@
 body {
-  background-image: url('/assets/img/bg.jpg');
+  background-image: url('../img/bg.jpg');
   background-size: cover;
-  cursor: url('/assets/img/hand1.png'), auto;
+  cursor: url('../img/hand1.png'), auto;
 }
 
 html,
@@ -51,7 +51,7 @@ body {
   position: relative;
   height: 150px;
   width: 50%;
-  cursor: url('/assets/img/hand1_tco.png'), auto;
+  cursor: url('../img/hand1_tco.png'), auto;
   float: left;
   margin: 10px auto;
 }
@@ -111,13 +111,13 @@ body {
   position: absolute;
   width: 150px;
   height: 150px;
-  background-image: url('/assets/img/clicked.png') !important;
+  background-image: url('../img/clicked.png') !important;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .champion-wrapper:hover .champion-ring {
-  background-image: url('/assets/img/hover.png') !important;
+  background-image: url('../img/hover.png') !important;
 }
 
 img.champion-icon {
@@ -159,7 +159,7 @@ button {
   transition: color 100ms linear;
 }
 button:hover {
-  cursor: url('/assets/img/hand1_tco.png'), auto;
+  cursor: url('../img/hand1_tco.png'), auto;
   color: #f0e6d2;
   border: 2px solid transparent;
   border-image: linear-gradient(
